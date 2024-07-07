@@ -1,0 +1,32 @@
+﻿ORG 100
+Input 
+Store X
+Input 
+Store Y
+
+Load X
+Subt Y
+Skipcond 800
+Jump ELSE
+Load X
+Add X
+Store Y
+Clear
+Store X
+Jump END
+ELSE, Load Y
+Add Y
+Store X
+Clear
+Store Y
+
+END, Load X
+Output
+Load Y 
+Output
+Halt
+
+X, DEC 0
+Y, DEC 0
+
+

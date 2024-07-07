@@ -1,0 +1,55 @@
+﻿ORG 100
+Load A
+Store PointA
+Load B
+Store PointB
+Load C
+Store PointC
+loopstart,Load cnt
+Subt Size
+Skipcond 000
+Jump end
+LoadI PointA
+AddI PointB
+StoreI PointC
+LoadI PointC
+Output
+Load PointA
+Add One
+Store PointA
+Load PointB
+Add One
+Store PointB
+Load PointC
+Add One
+Store PointC
+Load cnt
+Add One
+Store cnt
+Jump loopstart
+end, Halt
+
+A, HEX 11E
+   DEC 1
+   DEC 2
+   DEC 3
+   DEC 4
+   DEC 5
+B, HEX 124
+   DEC 6
+   DEC 7
+   DEC 8
+   DEC 9
+   DEC 10
+C, HEX 12A
+   DEC 0
+   DEC 0
+   DEC 0
+   DEC 0
+   DEC 0
+One, DEC 1
+cnt, Dec 0
+Size, DEC 5
+PointA, HEX 0
+PointB, HEX 0
+PointC, HEX 0

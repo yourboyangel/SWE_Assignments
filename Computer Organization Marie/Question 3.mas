@@ -1,0 +1,31 @@
+﻿ORG 100
+Input 
+Store A
+Input 
+Add ONE
+Store B
+
+Load A
+Store I
+LoopStart, Load I
+Subt B
+Skipcond 000
+Jump LoopEnd
+Load SUM
+Add I
+Store SUM
+Load I
+Add ONE
+Store I
+Jump LoopStart
+
+
+LoopEnd, Load SUM
+Output
+Halt
+
+A, DEC 0
+B, DEC 0
+I, DEC 0
+ONE, DEC 1
+SUM, DEC 0

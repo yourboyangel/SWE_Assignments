@@ -1,0 +1,41 @@
+﻿Input
+Store MultA
+Input
+Store MultB
+JNS Multiply
+Load MultOut
+Store AB
+Input
+Store MultA
+Input
+Store MultB
+JNS Multiply
+Load MultOut
+Add AB
+Output
+Halt
+
+Multiply, DEC 0
+Load ZERO
+Store MultI
+Store MultOut
+MultLoop, Load MultI
+Subt MultB
+Skipcond 000
+Jump MultEnd
+Load MultOut
+Add MultA
+Store MultOut
+Load MultI
+Add ONE
+Store MultI
+Jump MultLoop
+MultEnd, JumpI Multiply
+MultA, DEC 0
+MultB, DEC 0
+MultI, DEC 0
+MultOut, DEC 0
+
+ZERO, DEC 0
+ONE, DEC 1
+AB, DEC 0
